@@ -5,15 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FESA Control Center V5</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="manifest" href="manifest.json">
 </head>
 <body>
-    <!-- Aurora Background -->
     <div class="aurora-bg"></div>
 
-    <!-- Navbar -->
     <nav class="glass-navbar">
         <div class="nav-container">
             <div class="logo">
@@ -22,19 +21,61 @@
             </div>
             
             <div class="nav-menu">
-                <a href="#" class="nav-link active"><i class="fas fa-home"></i> Dashboard</a>
-                <a href="#" class="nav-link"><i class="fas fa-brain"></i> AI Center</a>
-                <a href="#" class="nav-link"><i class="fas fa-tools"></i> Tools</a>
-                <a href="#" class="nav-link"><i class="fas fa-chart-bar"></i> Analytics</a>
+                <a href="#" class="nav-link active">Dashboard</a>
+                <a href="#" class="nav-link">AI Center</a>
+                <a href="#" class="nav-link">Tools Hub</a>
+                <a href="#" class="nav-link">Analytics</a>
             </div>
 
             <div class="nav-right">
                 <button id="command-btn" class="command-btn">
-                    <i class="fas fa-search"></i> Ctrl + K
+                    <i class="fas fa-search"></i> Ctrl+K
                 </button>
                 <div class="api-status">
                     <span class="status-dot online"></span>
                     <span>4 Active</span>
+                </div>
+                <i class="fas fa-bell notification-icon"></i>
+                <div class="user-avatar">
+                    <i class="fas fa-user-circle fa-2x"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="dashboard">
+        <h1 class="main-heading">FESA Control Center V5</h1>
+        <p class="sub-heading">Ultra Premium • Futuristic Command Center</p>
+
+        <div class="globe-container">
+            <div class="globe" id="globe">🌍</div>
+        </div>
+
+        <div class="content-grid">
+            <!-- AI Status -->
+            <div class="glass-card">
+                <h3><i class="fas fa-brain"></i> AI Status</h3>
+                <div class="status online">● FULLY ONLINE</div>
+                <p>Latency: <strong>64ms</strong></p>
+            </div>
+
+            <!-- Active Tools -->
+            <div class="glass-card">
+                <h3><i class="fas fa-tools"></i> Quick Tools</h3>
+                <div id="tools-grid" class="tools-grid"></div>
+            </div>
+
+            <!-- API Monitor -->
+            <div class="glass-card">
+                <h3><i class="fas fa-satellite"></i> Live API Monitor</h3>
+                <div id="api-monitor" class="api-monitor"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+                    </html>                    <span>4 Active</span>
                 </div>
                 <i class="fas fa-bell notification-icon"></i>
                 <div class="user-avatar">
