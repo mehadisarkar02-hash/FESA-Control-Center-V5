@@ -1,0 +1,22 @@
+{
+  "name": "FESA Control Center V5",
+  "short_name": "FESA V5",
+  "description": "Ultra Premium AI & Tools Control Center",
+  "start_url": "/index.html",
+  "display": "standalone",
+  "background_color": "#05050f",
+  "theme_color": "#66ccff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icons/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
